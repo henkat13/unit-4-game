@@ -9,15 +9,10 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-
-
-
-
     <h1>Crystal Guess Game</h1>
 </head>
 
 <body>
-
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -26,27 +21,67 @@
                 By clicking on a
                 crystal you will add a specific amount of points to your total score. You win the game by matching your
                 total
-                score to the ramdom number, you lose the game if your total score goes above the random number.
+                score to the random number that was displayed at the beginning, you will lose the game if your total
+                score goes above the random number.
                 The value of each crystal is hidden from you until you click on it. Each time when the game starts, the
                 game
                 will change the values of each crystal.</p>
         </div>
+
     </div>
     <div class="row, container">
         <h3 class="col-sm-3"></h3>
         <h3 class="col-sm-3">Target Score:
             <span id='targetScore'>0</span>
         </h3>
+
         <h3 class="col-sm-3 ">Your Score: <span id='yourScore'>0</span></h3>
 
-        <br>
-
         <div class="buttons">
-            <button class="diamond" id="red" value="5">Red</button>
-            <button class="square" id="blue" value="10">Blue</button>
-            <button class="triangle" id="yellow" value="15">Yellow</button>
-            <button class="rectangle" id="green" value="20">Green</button>
+            <button class="circle" id="red" value="">Red</button>
+            <button class="square" id="blue" value="">Blue</button>
+            <button class="triangle-up" id="yellow" value="">Yellow</button>
+            <button class="rectangle" id="green" value="">Green</button>
         </div>
+    </div>
+
+    <style>
+        .rectangle {
+            height: 50px;
+            width: 100px;
+            background-color: green;
+        }
+    </style>
+    <style>
+        .triangle-up {
+            width: 0;
+            height: 0;
+            border-left: 25px solid transparent;
+            border-right: 25px solid transparent;
+            border-bottom: 50px solid yellow;
+        }
+    </style>
+    <style>
+        .square {
+            height: 50px;
+            width: 50px;
+            background-color: blue;
+        }
+    </style>
+    <style>
+        .circle {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+        }
+    </style>
+    </head>
+
+
+
+
+
 
 
 
